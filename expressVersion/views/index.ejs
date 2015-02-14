@@ -7,14 +7,6 @@
 	<!-- if a user is 'logged in', let's eventually show their github profile picture -->
 	<!-- if a user is logged in, they should  have the option to log out -->
 	Hello world!
-	<% if session['access_token'] %>
-	You are logged in!
-	<br>
-	<img src=<%= @image_url %> >
-	<% else  %>
-
 	<a href='<%=  @url %> '> Log in with GitHub </a>
-	<% end %>
-
 </body>
 </html>
